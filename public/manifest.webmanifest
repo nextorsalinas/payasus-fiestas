@@ -1,0 +1,22 @@
+{
+  "name": "Payasus Fiestas - Contrataciones",
+  "short_name": "Payasus Fiestas",
+  "description": "Contrata servicios para eventos y entrega recibos digitales.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#fffbff",
+  "theme_color": "#35205c",
+  "lang": "es-MX",
+  "categories": ["business", "productivity"],
+  "icons": [
+    {
+      "src": "/payasus-fiestas-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
+
