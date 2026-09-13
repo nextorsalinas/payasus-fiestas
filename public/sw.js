@@ -1,4 +1,4 @@
-const CACHE_NAME = 'payasus-fiestas-v2-shared';
+const CACHE_NAME = 'payasus-fiestas-v3-advisor';
 const APP_SHELL = ['/', '/manifest.webmanifest', '/payasus-fiestas-icon.svg'];
 
 self.addEventListener('install', (event) => {
