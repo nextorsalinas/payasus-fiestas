@@ -1,5 +1,5 @@
-const CACHE_NAME = 'payasus-fiestas-v3-advisor';
-const APP_SHELL = ['/', '/manifest.webmanifest', '/payasus-fiestas-icon.svg'];
+const CACHE_NAME = 'payasus-fiestas-v4-logo';
+const APP_SHELL = ['/', '/logo.png', '/manifest.webmanifest', '/payasus-fiestas-icon.svg'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL)));
