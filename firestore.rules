@@ -15,7 +15,9 @@ service cloud.firestore {
         && request.resource.data.total is number
         && request.resource.data.deposit is number
         && request.resource.data.balance is number;
-      allow read, update, delete: if false;
+      // Public reading explicitly enabled for the beta. Documents include client data.
+      allow read: if true;
+      allow update, delete: if false;
     }
   }
 }

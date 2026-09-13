@@ -31,7 +31,7 @@ async function list(project) {
     const actual=ruleset.source.files.map(f=>f.content).join('\n').replace(/\s+/g,'');
     const expected=fs.readFileSync('firestore.rules','utf8').replace(/\s+/g,'');
     if(actual!==expected) throw new Error('Las reglas publicadas difieren de la copia local; revisar antes de continuar.');
-    console.log('Reglas compartidas verificadas: permiten los campos de contratación y marca, sin lectura pública.');
+    console.log('Reglas compartidas verificadas: coinciden exactamente con firestore.rules.');
     return;
   }
   const source = await list('payasus-fiestas');
